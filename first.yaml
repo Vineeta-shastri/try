@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+     - name: run a command
+       command: echo "hello"
+       register: text_display
+     - debug:
+         msg: "{{text_display}}"
+ 
+             
